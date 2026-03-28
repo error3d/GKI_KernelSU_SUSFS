@@ -299,6 +299,11 @@ jobs:
     - rej
 
     env:
+      KERNEL_VERSION: 6.12
+      ANDROID_VERSION: android16
+      EXTRAVERSION: -android16-5
+      KSU_NEXT: true
+      ENABLE_SUSFS: true
       GH_TOKEN: ${{ github.token }}
       RELEASE_NAME: "GKI Kernels With WKSU & SUSFS v2.0.0"
       RELEASE_BODY: ""
